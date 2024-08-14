@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notiz-App</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="favicon">
+    <link rel="icon" href="img/favicon.ico" type="favicon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="fonts" href="./fonts/fonts.css">
+    <script src="script.js"></script>
+</head>
+<body onload="render()">
+    <header>
+        <div class="dropdown">
+            <button class="dropbtn">Menü</button>
+            <div class="dropdown-content">
+              <a href="./index.html">Notizen</a>
+              <a href="./trash.html">Papierkorb</a>
+            </div>
+        </div>
+        <a href="index.html">
+        <img class="header-icon" src="img/notiz.png" alt="">
+        </a>
+        <h1>Notizen</h1> 
+    </header>
+    <div class="sidebar">
+        <a class="sidebar-button" href="index.html">
+            <img class="sidebar-icon" src="./img/notiz.png" alt="note-img">
+            <p>Notizen</p>
+        </a>
+        <a class="sidebar-button" href="trash.html">
+            <img class="sidebar-icon" src="./img/papierkorb.png" alt="trash-bin-img">
+            <p>Papierkorb</p>
+        </a>
+    </div>
+    <div id="content" class="content"></div>
+</body>
+</html>
